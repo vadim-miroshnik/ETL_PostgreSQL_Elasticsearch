@@ -131,3 +131,5 @@ dmypy.json
 .python-version
 
 .vscode
+
+filmwork_state.json

@@ -50,7 +50,8 @@ class State:
 
     def set_state(self, key: str, value: Any) -> None:
         """Установить состояние для определённого ключа"""
-        self.storage.save_state({key: value})
+        self.state[key] = value
+        self.storage.save_state(self.state)
 
     def get_state(self, key: str) -> Any:
         """Получить состояние по определённому ключу"""
